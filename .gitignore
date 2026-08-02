@@ -1,0 +1,70 @@
+# Python bytecode/cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+.venv-linux/
+venv/
+env/
+ENV/
+
+# Python packaging/build artifacts
+build/
+dist/
+dist-*/
+*.egg-info/
+.eggs/
+
+# Test, lint, and coverage caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+tmp/
+
+# Jupyter/IPython
+.ipynb_checkpoints/
+
+# Local environment/config
+.env
+.env.*
+!.env.example
+
+# Logs and temporary files
+*.log
+*.out
+*.err
+*.tmp
+*.bak
+*.swp
+*.swo
+~$*
+.vscode_slurm_out.txt
+
+# Generated experiment artifacts
+__exp_data/**
+!__exp_data/
+!__exp_data/**/
+!__exp_data/**/*.pkl
+__fig/
+*_timing_stats.txt
+timing_stats.txt
+example/experiments/artifacts/logs/
+example/experiments/artifacts/archive
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# codex
+.agents
+
+# Generated public release snapshot
+release/
+
+archive/

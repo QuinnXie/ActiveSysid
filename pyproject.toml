@@ -1,0 +1,56 @@
+[build-system]
+requires = ["setuptools>=77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "activesysid"
+version = "0.1.0"
+authors = [
+  { name = "Kui Xie" },
+  { name = "Alberto Bemporad" },
+]
+description = "Active-learning input design for online linear and nonlinear system identification with JAX."
+readme = "README.md"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+requires-python = ">=3.10"
+dependencies = [
+  "dill==0.4.1",
+  "flax==0.10.4",
+  "jax==0.4.31",
+  "jax-sysid==1.1.0",
+  "jaxlib==0.4.31",
+  "jaxopt==0.8.5",
+  "joblib==1.5.3",
+  "matplotlib==3.11.1",
+  "numpy==2.2.6",
+  "scipy==1.14.1",
+  "tqdm==4.69.1",
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering",
+]
+keywords = [
+  "active learning",
+  "design of experiments",
+  "system identification",
+  "JAX",
+  "extended Kalman filter",
+]
+
+[project.urls]
+Homepage = "https://github.com/QuinnXie/ActiveSysID"
+Documentation = "https://github.com/QuinnXie/ActiveSysID/blob/main/docs/benchmark_reproduction.md"
+Issues = "https://github.com/QuinnXie/ActiveSysID/issues"
+Paper = "https://doi.org/10.48550/arXiv.2506.21754"
+Source = "https://github.com/QuinnXie/ActiveSysID"
+
+[tool.setuptools.packages.find]
+where = ["src"]
